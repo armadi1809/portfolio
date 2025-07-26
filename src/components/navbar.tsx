@@ -11,8 +11,8 @@ function Navbar() {
         <a href="#projects" className="hover:underline">
           Projects
         </a>
-        <a href="#contact" className="hover:underline">
-          Contact
+        <a href="#open-source-contributions" className="hover:underline">
+          Open Source
         </a>
         <ModeToggle />
       </div>

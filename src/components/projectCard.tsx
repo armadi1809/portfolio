@@ -4,7 +4,8 @@ export interface ProjectProps {
   description: string;
   technologies: Array<string>;
   githubUrl: string;
-  liveUrl: string;
+  liveUrl?: string;
+  projectWebsite?: string;
   imageUrl: string;
 }
 
@@ -49,30 +50,42 @@ export function ProjectCard(project: ProjectProps) {
             Code
           </a>
           {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-              Live Demo
-            </a>
+            <ProjectSiteSpan link={project.liveUrl} text="Live Demo" />
+          )}
+          {project.projectWebsite && (
+            <ProjectSiteSpan
+              link={project.projectWebsite}
+              text="Project Site"
+            />
           )}
         </div>
       </div>
     </div>
+  );
+}
+
+function ProjectSiteSpan({ link, text }: { link: string; text: string }) {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
+    >
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+        />
+      </svg>
+      {text}
+    </a>
   );
 }
