@@ -5,9 +5,6 @@ function Navbar() {
     <nav className="flex justify-between items-center">
       <div className="text-2xl">Aziz Rmadi</div>
       <div className="space-x-4 text-xl">
-        <a href="#home" className="hover:underline">
-          Home
-        </a>
         <a href="#about" className="hover:underline">
           About
         </a>

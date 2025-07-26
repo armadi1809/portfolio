@@ -3,13 +3,18 @@ export default function Hero() {
     <div className="flex items-center mt-20 gap-24 space w-full">
       <div className="w-1/2">
         <h1 className="text-4xl font-bold mb-4">
-          Hey! I am Aziz, a fullstack developer based in Chicago{" "}
+          Hey! I am Aziz, a fullstack developer based in Copenhagen, Denmark.{" "}
         </h1>
         <p className="text-lg mb-4">
-          I am passionate aboout the web, building user-friendly interfaces, and
+          I am passionate about the web, building user-friendly interfaces, and
           creating efficient backend systems. I graduated from Purdue University
-          with a defree in Computer Engineering in 2022 and I am currently
-          working at GE Healthcare as a software engineer.
+          with a degree in Computer Engineering in 2022. I have worked as a
+          software engineer at DMC Engineering and at GE Healthcare in Chicago,
+          gaining over three years of professional software development
+          experience. I am currently pursuing a master’s degree in Computer
+          Science at the University of Copenhagen, specializing in the
+          Programming and Languages track, fully funded by the Danish government
+          scholarship.
         </p>
         <div className="flex gap-4">
           <a
@@ -34,7 +39,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="">
+      <div className="h-1/3 w-1/3">
         <img
           src="/profile.jpeg"
           alt="Aziz - Fullstack Developer"

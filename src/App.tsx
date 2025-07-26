@@ -9,7 +9,7 @@ function App() {
       <>
         <div className="px-32 py-3 min-h-screen">
           <Navbar></Navbar>
-          <section id="home">
+          <section id="about">
             <Hero></Hero>
           </section>
           <Projects></Projects>
