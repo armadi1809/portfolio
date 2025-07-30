@@ -6,15 +6,15 @@ export default function Hero() {
           Hey! I am Aziz, a fullstack developer based in Copenhagen, Denmark.{" "}
         </h1>
         <p className="text-lg mb-4">
-          I am passionate about the web, building user-friendly interfaces, and
-          creating efficient backend systems. I graduated from Purdue University
-          with a degree in Computer Engineering in 2022. I have worked as a
-          software engineer at DMC Engineering and at GE Healthcare in Chicago,
-          gaining over three years of professional software development
-          experience. I am currently pursuing a master’s degree in Computer
-          Science at the University of Copenhagen, specializing in the
-          Programming and Languages track, fully funded by the Danish government
-          scholarship.
+          I am passionate about the web, building user-friendly interfaces,
+          creating efficient backend systems, and compilers. I graduated from
+          Purdue University with a degree in Computer Engineering in 2022. I
+          have worked as a software engineer at DMC Engineering and at GE
+          Healthcare in Chicago, gaining over three years of professional
+          software development experience. I am currently pursuing a master’s
+          degree in Computer Science at the University of Copenhagen,
+          specializing in the Programming and Languages track, fully funded by
+          the Danish government scholarship.
         </p>
         <div className="flex gap-4">
           <a
