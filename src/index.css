@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Zilla+Slab:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -40,29 +41,30 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   /* Add font family */
-  --font-sans: "Intel One Mono", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Zilla Slab", ui-serif, Georgia, serif;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --background: oklch(0.99 0.02 95);
+  --foreground: oklch(0.2 0.02 40);
+  --card: oklch(0.985 0.02 95);
+  --card-foreground: oklch(0.2 0.02 40);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --primary: oklch(0.2 0.02 40);
+  --primary-foreground: oklch(0.985 0.02 95);
+  --secondary: oklch(0.94 0.03 95);
+  --secondary-foreground: oklch(0.24 0.03 45);
+  --muted: oklch(0.95 0.02 95);
+  --muted-foreground: oklch(0.48 0.02 40);
+  --accent: oklch(0.93 0.03 95);
+  --accent-foreground: oklch(0.22 0.03 40);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.86 0.03 90);
+  --input: oklch(0.86 0.03 90);
+  --ring: oklch(0.6 0.05 50);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -79,24 +81,24 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.18 0.03 35);
+  --foreground: oklch(0.94 0.02 95);
+  --card: oklch(0.94 0.02 95);
+  --card-foreground: oklch(0.22 0.03 40);
+  --popover: oklch(0.2 0.03 35);
+  --popover-foreground: oklch(0.94 0.02 95);
+  --primary: oklch(0.94 0.02 95);
+  --primary-foreground: oklch(0.22 0.03 40);
+  --secondary: oklch(0.26 0.03 35);
+  --secondary-foreground: oklch(0.94 0.02 95);
+  --muted: oklch(0.26 0.03 35);
+  --muted-foreground: oklch(0.72 0.02 80);
+  --accent: oklch(0.24 0.03 35);
+  --accent-foreground: oklch(0.94 0.02 95);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: oklch(0.62 0.03 60 / 30%);
+  --input: oklch(0.62 0.03 60 / 30%);
+  --ring: oklch(0.62 0.05 60);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -123,5 +125,190 @@
   
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .casefile-shell {
+    background:
+      radial-gradient(circle at 10% 20%, oklch(0.28 0.05 40 / 40%), transparent 40%),
+      radial-gradient(circle at 90% 10%, oklch(0.3 0.04 30 / 30%), transparent 45%),
+      repeating-linear-gradient(
+        0deg,
+        oklch(0.2 0.03 35 / 15%) 0px,
+        oklch(0.2 0.03 35 / 15%) 1px,
+        transparent 1px,
+        transparent 38px
+      ),
+      var(--background);
+  }
+
+  .casefile-container {
+    @apply mx-auto max-w-6xl px-6 pb-20 pt-8 md:px-10;
+  }
+
+  .casefile-main {
+    @apply space-y-16 md:space-y-24;
+  }
+
+  .casefile-section {
+    @apply scroll-mt-24;
+  }
+
+  .casefile-nav {
+    @apply flex flex-col gap-4 border-b border-border pb-6 md:flex-row md:items-center md:justify-between;
+  }
+
+  .casefile-logo {
+    @apply flex items-center gap-3 text-lg font-semibold tracking-wide text-foreground;
+  }
+
+  .casefile-logo-mark {
+    @apply grid h-10 w-10 place-items-center rounded-full border border-border bg-card font-semibold;
+    font-family: var(--font-serif);
+  }
+
+  .casefile-nav-links {
+    @apply flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] text-muted-foreground;
+  }
+
+  .casefile-nav-link {
+    @apply transition-colors hover:text-foreground;
+  }
+
+  .casefile-section-header {
+    @apply space-y-3;
+  }
+
+  .casefile-masthead {
+    @apply space-y-3;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs uppercase tracking-[0.3em] text-muted-foreground;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl;
+  }
+
+  .section-lede {
+    @apply max-w-2xl text-base text-muted-foreground md:text-lg;
+  }
+
+  .font-display {
+    font-family: var(--font-serif);
+  }
+
+  .paper-card {
+    @apply rounded-3xl border border-border bg-card p-6 shadow-[0_18px_45px_-30px_rgba(10,10,10,0.6)];
+  }
+
+  .paper-card-header {
+    @apply mb-6 flex items-center justify-between border-b border-border pb-4;
+  }
+
+  .paper-card-title {
+    @apply text-xl font-semibold;
+  }
+
+  .paper-card-tag {
+    @apply rounded-full border border-border px-3 py-1 text-xs uppercase tracking-[0.2em] text-muted-foreground;
+  }
+
+  .casefile-links {
+    @apply flex flex-wrap items-center gap-3;
+  }
+
+  .casefile-link {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-xs uppercase tracking-[0.2em] text-foreground transition hover:bg-accent;
+  }
+
+  .casefile-tag {
+    @apply inline-flex items-center rounded-full border border-border bg-card px-3 py-1 text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground;
+  }
+
+  .casefile-portrait {
+    @apply space-y-4;
+  }
+
+  .casefile-portrait-frame {
+    @apply overflow-hidden rounded-3xl border border-border bg-secondary;
+  }
+
+  .casefile-portrait-image {
+    @apply h-full w-full object-cover;
+  }
+
+  .casefile-portrait-caption {
+    @apply flex items-center justify-between text-xs uppercase tracking-[0.25em] text-muted-foreground;
+  }
+
+  .case-entry {
+    @apply space-y-3 border-b border-border pb-6 last:border-b-0 last:pb-0;
+  }
+
+  .case-entry-header {
+    @apply flex flex-col gap-2 md:flex-row md:items-start md:justify-between;
+  }
+
+  .case-entry-role {
+    @apply text-base font-semibold text-foreground;
+  }
+
+  .case-entry-company {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .case-entry-period {
+    @apply text-xs uppercase tracking-[0.2em] text-muted-foreground;
+  }
+
+  .case-entry-list {
+    @apply list-disc space-y-2 pl-5 text-sm text-foreground/80;
+  }
+
+  .casefile-card {
+    @apply flex h-full flex-col overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-[0_25px_60px_-35px_rgba(10,10,10,0.6)];
+  }
+
+  .casefile-image {
+    @apply h-44 w-full overflow-hidden border-b border-border;
+  }
+
+  .casefile-image-img {
+    @apply h-full w-full object-cover;
+  }
+
+  .casefile-image-placeholder {
+    @apply flex h-full w-full items-center justify-center bg-secondary text-xs uppercase tracking-[0.25em] text-muted-foreground;
+  }
+
+  .casefile-card-body {
+    @apply flex flex-1 flex-col gap-4 p-5;
+  }
+
+  .casefile-card-meta {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .casefile-card-title {
+    @apply text-xl font-semibold;
+  }
+
+  .casefile-card-description {
+    @apply text-sm text-foreground/80;
+  }
+
+  .casefile-card-tech {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .casefile-chip {
+    @apply rounded-full border border-border bg-secondary px-3 py-1 text-[0.65rem] uppercase tracking-[0.2em] text-foreground;
+  }
+
+  .casefile-card-links {
+    @apply mt-auto flex flex-wrap gap-3;
   }
 }

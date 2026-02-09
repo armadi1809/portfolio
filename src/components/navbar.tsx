@@ -2,16 +2,22 @@ import { ModeToggle } from "./mode-toggle";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center">
-      <div className="text-2xl">Aziz Rmadi</div>
-      <div className="space-x-4 text-xl">
-        <a href="#about" className="hover:underline">
-          About
+    <nav className="casefile-nav">
+      <div className="casefile-logo">
+        <span className="casefile-logo-mark">AR</span>
+        <span>Aziz Rmadi</span>
+      </div>
+      <div className="casefile-nav-links">
+        <a href="#about" className="casefile-nav-link">
+          Overview
         </a>
-        <a href="#projects" className="hover:underline">
+        <a href="#casefile" className="casefile-nav-link">
+          Casefile
+        </a>
+        <a href="#projects" className="casefile-nav-link">
           Projects
         </a>
-        <a href="#open-source-contributions" className="hover:underline">
+        <a href="#open-source-contributions" className="casefile-nav-link">
           Open Source
         </a>
         <ModeToggle />
