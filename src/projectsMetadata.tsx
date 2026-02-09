@@ -78,6 +78,18 @@ const openSourceProojects = [
     githubUrl: "https://github.com/caddyserver/caddy",
     projectWebsite: "https://caddyserver.com/",
   },
+  {
+    id: 2,
+    caseId: "FIELD 02",
+    year: "2025-Present",
+    title: "Futhark",
+    description:
+      "Futhark is a small programming language designed to be compiled to efficient parallel code. It is a statically typed, data-parallel, and purely functional array language in the ML family, and comes with a heavily optimising ahead-of-time compiler that presently generates either GPU code via CUDA and OpenCL, or multi-threaded CPU code.",
+    technologies: ["Haskell"],
+    imageUrl: "/futhark.png",
+    githubUrl: "https://github.com/diku-dk/futhark",
+    projectWebsite: "https://futhark-lang.org/",
+  },
 ];
 
 export { projects, openSourceProojects };
