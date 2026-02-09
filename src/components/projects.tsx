@@ -18,7 +18,7 @@ export default function Projects(props: ProjectsSectionProps) {
         <h2 className="section-title font-display">{props.title}</h2>
         {props.lede && <p className="section-lede">{props.lede}</p>}
       </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pt-5">
         {props.projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
