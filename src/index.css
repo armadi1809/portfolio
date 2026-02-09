@@ -152,7 +152,23 @@
   }
 
   .casefile-section {
-    @apply scroll-mt-24;
+    @apply scroll-mt-24 pt-5;
+  }
+
+  .casefile-intro {
+    @apply mb-6 text-xs uppercase tracking-[0.35em] text-muted-foreground;
+  }
+
+  .casefile-intro-text {
+    display: inline-block;
+    width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
+    border-right: 1px solid currentColor;
+    clip-path: inset(0 100% 0 0);
+    animation:
+      casefile-typing 2.8s steps(40, end) 0.2s forwards,
+      casefile-caret 0.8s step-end infinite;
   }
 
   .casefile-nav {
@@ -314,5 +330,20 @@
 
   .casefile-card-links {
     @apply mt-auto flex flex-wrap gap-3;
+  }
+}
+
+@keyframes casefile-typing {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes casefile-caret {
+  50% {
+    border-color: transparent;
   }
 }

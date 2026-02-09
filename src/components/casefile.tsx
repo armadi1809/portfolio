@@ -81,7 +81,7 @@ export default function Casefile() {
           guide my projects.
         </p>
       </div>
-      <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] pt-5">
         <div className="paper-card">
           <div className="paper-card-header">
             <h3 className="paper-card-title">Experience Timeline</h3>

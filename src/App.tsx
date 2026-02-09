@@ -14,6 +14,12 @@ function App() {
             <Navbar />
             <main className="casefile-main">
               <section id="about" className="casefile-section">
+                <div className="casefile-intro">
+                  <span className="casefile-intro-text">
+                    Welcome to the case file of Ahmed Aziz Rmadi. Happy
+                    investigation!
+                  </span>
+                </div>
                 <Hero />
               </section>
               <Casefile />
