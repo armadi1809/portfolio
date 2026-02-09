@@ -9,14 +9,16 @@ export default function Hero() {
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
             Full stack developer building dependable web products, tooling, and
-            data systems from Copenhagen.
+            data systems. I am currently pursuing a Master's of Science in CS at
+            the University of Copenhagen. In my studies, I am focusing on big
+            data systems, programming languages and compilers
           </p>
         </div>
         <p className="text-base md:text-lg text-foreground/80">
-          I work across Go, TypeScript, and Java with a focus on shipping clean
-          interfaces and resilient backends. My recent work spans healthcare
-          data platforms, industrial control tooling, and open source
-          infrastructure.
+          I work across Go, TypeScript, Java, Python, Haskell and more with a
+          focus on shipping clean interfaces and resilient backends. With more
+          than three years of professional experience as a software engineer, my
+          recent roles spanned multiple industries.
         </p>
         <div className="casefile-links">
           <a href="mailto:azizrmadi@gmail.com" className="casefile-link">
@@ -51,7 +53,7 @@ export default function Hero() {
         </div>
         <div className="casefile-portrait-caption">
           <span>Primary focus</span>
-          <strong>Interfaces, tooling, systems</strong>
+          <strong>Sytems, Software Engineering, Compilers</strong>
         </div>
       </div>
     </div>

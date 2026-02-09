@@ -252,8 +252,12 @@
     @apply flex flex-col gap-2 md:flex-row md:items-start md:justify-between;
   }
 
+  .case-entry-header > div {
+    min-width: 0;
+  }
+
   .case-entry-role {
-    @apply text-base font-semibold text-foreground;
+    @apply break-words text-base font-semibold text-foreground;
   }
 
   .case-entry-company {
@@ -261,7 +265,7 @@
   }
 
   .case-entry-period {
-    @apply text-xs uppercase tracking-[0.2em] text-muted-foreground;
+    @apply whitespace-nowrap text-xs uppercase tracking-[0.2em] text-muted-foreground;
   }
 
   .case-entry-list {

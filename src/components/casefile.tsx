@@ -85,7 +85,6 @@ export default function Casefile() {
         <div className="paper-card">
           <div className="paper-card-header">
             <h3 className="paper-card-title">Experience Timeline</h3>
-            <span className="paper-card-tag">2019 - Present</span>
           </div>
           <div className="space-y-6">
             {experience.map((item) => (

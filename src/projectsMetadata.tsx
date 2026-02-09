@@ -38,7 +38,7 @@ const projects = [
       "A secure, CLI-based secret manager in Go using Bubble Tea for terminal UI. It encrypts data with AES-256-GCM and stores it locally in JSON.",
     technologies: ["Golang", "Bubble Tea", "Cryptography", "CLI"],
     githubUrl: "https://github.com/armadi1809/vaulta",
-    imageUrl: "",
+    imageUrl: "/vaultaa.png",
   },
   {
     id: 4,
@@ -49,7 +49,19 @@ const projects = [
       "A learning playground where I rebuild well-known programs from scratch to understand fundamentals and low-level details.",
     technologies: ["Golang", "Ebiten", "HTTP", "Systems"],
     githubUrl: "https://github.com/armadi1809/reinventing_the_wheel",
-    imageUrl: "",
+    imageUrl: "/reinventingthewheel.png",
+  },
+  {
+    id: 5,
+    caseId: "CASE 05",
+    year: "2023",
+    title: "Chip 8 Go - A Chip 8 Emulator",
+    description:
+      "A fully functional Chip 8 emulator written in Go's Ebiten engine, deployed via WebAssembly for easy access in browsers.",
+    technologies: ["Golang", "Ebiten Engine", "WebAssembly", "CSS"],
+    githubUrl: "https://github.com/armadi1809/chip8-go",
+    liveUrl: "https://azizrmadi.com/projects/chip8/",
+    imageUrl: "/chip8.png",
   },
 ];
 
