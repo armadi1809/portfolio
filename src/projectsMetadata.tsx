@@ -60,8 +60,8 @@ const projects = [
       "A fully functional Chip 8 emulator written in Go's Ebiten engine, deployed via WebAssembly for easy access in browsers.",
     technologies: ["Golang", "Ebiten Engine", "WebAssembly", "CSS"],
     githubUrl: "https://github.com/armadi1809/chip8-go",
-    liveUrl: "https://azizrmadi.com/projects/chip8/",
-    imageUrl: "/chip8.png",
+    liveUrl: "https://azizrmadi.com/chip8/",
+    imageUrl: "/imgchip8.png",
   },
 ];
 
