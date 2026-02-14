@@ -32,7 +32,7 @@ const projects = [
   {
     id: 3,
     caseId: "CASE 03",
-    year: "2024",
+    year: "2026",
     title: "Vaulta",
     description:
       "A secure, CLI-based secret manager in Go using Bubble Tea for terminal UI. It encrypts data with AES-256-GCM and stores it locally in JSON.",
@@ -43,7 +43,7 @@ const projects = [
   {
     id: 4,
     caseId: "CASE 04",
-    year: "2024",
+    year: "2026",
     title: "Reinventing the Wheel",
     description:
       "A learning playground where I rebuild well-known programs from scratch to understand fundamentals and low-level details.",
