@@ -63,28 +63,26 @@ const education = [
 ];
 
 const caseNotes = [
-  "Full stack builder across Go, TypeScript, Java, and React.",
-  "Focus on tooling, data-heavy UIs, and reliable backend systems.",
-  "Based in Copenhagen with experience across healthcare and industrial tech.",
+  "I enjoy turning fuzzy ideas into clear, shippable products.",
+  "My sweet spot is developer tooling, data-rich interfaces, and resilient services.",
+  "Based in Copenhagen, with hands-on experience across healthcare and industrial tech.",
 ];
 
 export default function Casefile() {
   return (
     <section id="casefile" className="casefile-section">
       <div className="casefile-section-header">
-        <span className="section-label">Casefile</span>
-        <h2 className="section-title font-display">
-          Background and Field Notes
-        </h2>
+        <span className="section-label">Journey</span>
+        <h2 className="section-title font-display">Experience and Education</h2>
         <p className="section-lede">
-          A concise record of roles, education, and the working patterns that
-          guide my projects.
+          A quick snapshot of where I have worked, what I have studied, and how
+          I approach building software.
         </p>
       </div>
       <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] pt-5">
         <div className="paper-card">
           <div className="paper-card-header">
-            <h3 className="paper-card-title">Experience Timeline</h3>
+            <h3 className="paper-card-title">Professional Experience</h3>
           </div>
           <div className="space-y-6">
             {experience.map((item) => (
@@ -135,7 +133,7 @@ export default function Casefile() {
           </div>
           <div className="paper-card">
             <div className="paper-card-header">
-              <h3 className="paper-card-title">Case Notes</h3>
+              <h3 className="paper-card-title">Quick Notes</h3>
               <span className="paper-card-tag">Focus</span>
             </div>
             <ul className="case-entry-list">

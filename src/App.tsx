@@ -7,7 +7,7 @@ import { projects, openSourceProojects } from "./projectsMetadata";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <>
         <div className="casefile-shell min-h-screen">
           <div className="casefile-container">
@@ -16,8 +16,8 @@ function App() {
               <section id="about" className="casefile-section">
                 <div className="casefile-intro">
                   <span className="casefile-intro-text">
-                    Welcome to the case file of Ahmed Aziz Rmadi. Happy
-                    investigation!
+                    Welcome to Ahmed Aziz Rmadi's portfolio. Thanks for stopping
+                    by!
                   </span>
                 </div>
                 <Hero />
@@ -25,16 +25,16 @@ function App() {
               <Casefile />
               <Projects
                 projects={projects}
-                title="Selected Casefiles"
+                title="Featured Projects"
                 eyebrow="Projects"
-                lede="A focused set of builds where I owned the core logic, shipped the product, and documented the outcome."
+                lede="A selection of products and experiments where I owned architecture, implementation, and delivery."
                 id="projects"
               />
               <Projects
                 projects={openSourceProojects}
                 title="Open Source Contributions"
-                eyebrow="Field Work"
-                lede="Public collaboration and fixes that strengthen real-world infrastructure."
+                eyebrow="Community"
+                lede="Public contributions and collaborations that improve real-world developer tools."
                 id="open-source-contributions"
               />
             </main>

@@ -9,10 +9,10 @@ function Navbar() {
       </div>
       <div className="casefile-nav-links">
         <a href="#about" className="casefile-nav-link">
-          Overview
+          Home
         </a>
         <a href="#casefile" className="casefile-nav-link">
-          Casefile
+          Journey
         </a>
         <a href="#projects" className="casefile-nav-link">
           Projects

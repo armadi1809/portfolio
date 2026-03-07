@@ -3,22 +3,22 @@ export default function Hero() {
     <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
       <div className="space-y-6">
         <div className="casefile-masthead">
-          <span className="section-label">Casefile 2026</span>
+          <span className="section-label">Portfolio 2026</span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
             Ahmed Aziz Rmadi
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Full stack developer building dependable web products, tooling, and
-            data systems. I am currently pursuing a Master's of Science in CS at
-            the University of Copenhagen. In my studies, I am focusing on big
-            data systems, programming languages and compilers
+            Full stack developer building thoughtful products, developer tools,
+            and data-heavy systems. I am currently pursuing an MSc in Computer
+            Science at the University of Copenhagen, with a focus on data
+            systems, programming languages, and compilers.
           </p>
         </div>
         <p className="text-base md:text-lg text-foreground/80">
-          I work across Go, TypeScript, Java, Python, Haskell and more with a
-          focus on shipping clean interfaces and resilient backends. With more
-          than three years of professional experience as a software engineer, my
-          recent roles spanned multiple industries.
+          I work across Go, TypeScript, Java, Python, and Haskell, balancing
+          product polish with robust backend engineering. Over three years of
+          professional experience, I have shipped software in healthcare,
+          industrial, and infrastructure-focused teams.
         </p>
         <div className="casefile-links">
           <a href="mailto:azizrmadi@gmail.com" className="casefile-link">
@@ -52,8 +52,8 @@ export default function Hero() {
           />
         </div>
         <div className="casefile-portrait-caption">
-          <span>Primary focus</span>
-          <strong>Sytems, Software Engineering, Compilers</strong>
+          <span>Currently focused on</span>
+          <strong>Systems, Software Engineering, and Compilers</strong>
         </div>
       </div>
     </div>
