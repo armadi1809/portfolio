@@ -8,10 +8,10 @@ export default function Hero() {
             Ahmed Aziz Rmadi
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Full stack developer building thoughtful products, developer tools,
-            and data-heavy systems. I am currently pursuing an MSc in Computer
-            Science at the University of Copenhagen, with a focus on data
-            systems, programming languages, and compilers.
+            Full stack developer at the LEGO Group building thoughtful products,
+            developer tools, and data-heavy systems. I am currently pursuing an
+            MSc in Computer Science at the University of Copenhagen, with a
+            focus on data systems, programming languages, and compilers.
           </p>
         </div>
         <p className="text-base md:text-lg text-foreground/80">
