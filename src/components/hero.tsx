@@ -1,9 +1,10 @@
 export default function Hero() {
+  const year = new Date().getFullYear();
   return (
     <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
       <div className="space-y-6">
         <div className="casefile-masthead">
-          <span className="section-label">Portfolio 2026</span>
+          <span className="section-label">Portfolio {year}</span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
             Ahmed Aziz Rmadi
           </h1>

@@ -16,8 +16,7 @@ function App() {
               <section id="about" className="casefile-section">
                 <div className="casefile-intro">
                   <span className="casefile-intro-text">
-                    Welcome to Ahmed Aziz Rmadi's portfolio. Thanks for stopping
-                    by!
+                    Welcome to my website. Thanks for stopping by!
                   </span>
                 </div>
                 <Hero />
