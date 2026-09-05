@@ -1,9 +1,20 @@
 const experience = [
   {
+    role: "Student Software Engineer - Marketing Data Strategy (MDS)",
+    company: "The LEGO Group",
+    location: "Copenhagen, Denmark",
+    period: "Jun 2026 - Present",
+    highlights: [
+      "Built and maintained a company-wide internal marketing campaign taxonomy string generator using React, FastAPI, AWS Lambda, and S3, used by marketing teams across the organization to standardize campaign metadata.",
+      "Developed automated ingestion pipelines for third-party marketing data using AWS and Databricks, including scheduled SFTP workflows that retrieve CSV files, store them in S3, and trigger downstream table population on file arrival.",
+      "Replaced a previous AWS FTP-server-based ingestion setup with a simpler event-driven architecture, reducing infrastructure costs by approximately $200/month while improving maintainability and reliability.",
+    ],
+  },
+  {
     role: "Student Software Engineer - Edge Applications (EDAE)",
     company: "Everllence (formerly MAN Energy)",
     location: "Copenhagen, Denmark",
-    period: "Aug 2025 - Present",
+    period: "Aug 2025 - May 2026",
     highlights: [
       "Owned a Node.js CLI scaffolding tool used as the default starter for framework projects.",
       "Designed React HMI screens in Electron for data-heavy engine control systems.",
