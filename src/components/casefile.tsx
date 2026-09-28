@@ -76,83 +76,69 @@ const education = [
 const caseNotes = [
   "I enjoy turning fuzzy ideas into clear, shippable products.",
   "My sweet spot is developer tooling, data-rich interfaces, and resilient services.",
-  "Based in Copenhagen, with hands-on experience across healthcare and industrial tech.",
 ];
 
 export default function Casefile() {
   return (
-    <section id="casefile" className="casefile-section">
-      <div className="casefile-section-header">
-        <span className="section-label">Journey</span>
-        <h2 className="section-title font-display">Experience and Education</h2>
+    <section id="experience" className="section">
+      <header className="section-header">
+        <p className="section-eyebrow">Journey</p>
+        <h2 className="section-title">Experience and Education</h2>
         <p className="section-lede">
           A quick snapshot of where I have worked, what I have studied, and how
           I approach building software.
         </p>
-      </div>
-      <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] pt-5">
-        <div className="paper-card">
-          <div className="paper-card-header">
-            <h3 className="paper-card-title">Professional Experience</h3>
-          </div>
-          <div className="space-y-6">
+      </header>
+      <div className="space-y-16">
+        <div>
+          <h3 className="subsection-title">Professional Experience</h3>
+          <ol className="space-y-10">
             {experience.map((item) => (
-              <div
-                key={`${item.company}-${item.period}`}
-                className="case-entry"
-              >
-                <div className="case-entry-header">
-                  <div>
-                    <p className="case-entry-role">{item.role}</p>
-                    <p className="case-entry-company">
-                      {item.company} - {item.location}
-                    </p>
-                  </div>
-                  <span className="case-entry-period">{item.period}</span>
-                </div>
-                <ul className="case-entry-list">
-                  {item.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="space-y-6">
-          <div className="paper-card">
-            <div className="paper-card-header">
-              <h3 className="paper-card-title">Education</h3>
-              <span className="paper-card-tag">Academic</span>
-            </div>
-            <div className="space-y-5">
-              {education.map((item) => (
-                <div key={`${item.school}-${item.period}`}>
-                  <p className="case-entry-role">{item.program}</p>
-                  <p className="case-entry-company">
-                    {item.school} - {item.location}
+              <li key={`${item.company}-${item.period}`} className="entry">
+                <p className="entry-period">{item.period}</p>
+                <div>
+                  <p className="font-medium">{item.role}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {item.company} · {item.location}
                   </p>
-                  <p className="case-entry-period">{item.period}</p>
-                  <ul className="case-entry-list">
+                  <ul className="entry-list">
+                    {item.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div>
+          <h3 className="subsection-title">Education</h3>
+          <ol className="space-y-10">
+            {education.map((item) => (
+              <li key={`${item.school}-${item.period}`} className="entry">
+                <p className="entry-period">{item.period}</p>
+                <div>
+                  <p className="font-medium">{item.program}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {item.school} · {item.location}
+                  </p>
+                  <ul className="entry-list">
                     {item.notes.map((note) => (
                       <li key={note}>{note}</li>
                     ))}
                   </ul>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="paper-card">
-            <div className="paper-card-header">
-              <h3 className="paper-card-title">Quick Notes</h3>
-              <span className="paper-card-tag">Focus</span>
-            </div>
-            <ul className="case-entry-list">
-              {caseNotes.map((note) => (
-                <li key={note}>{note}</li>
-              ))}
-            </ul>
-          </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div>
+          <h3 className="subsection-title">Quick Notes</h3>
+          <ul className="entry-list">
+            {caseNotes.map((note) => (
+              <li key={note}>{note}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

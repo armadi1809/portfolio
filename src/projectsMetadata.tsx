@@ -1,7 +1,6 @@
 const projects = [
   {
     id: 1,
-    caseId: "PROJECT 01",
     year: "2024",
     title: "Movies Diary",
     description:
@@ -13,7 +12,6 @@ const projects = [
   },
   {
     id: 2,
-    caseId: "PROJECT 02",
     year: "2023",
     title: "AI Personas",
     description:
@@ -31,7 +29,6 @@ const projects = [
   },
   {
     id: 3,
-    caseId: "PROJECT 03",
     year: "2026",
     title: "Vaulta",
     description:
@@ -42,7 +39,6 @@ const projects = [
   },
   {
     id: 4,
-    caseId: "PROJECT 04",
     year: "2026",
     title: "Reinventing the Wheel",
     description:
@@ -53,7 +49,6 @@ const projects = [
   },
   {
     id: 5,
-    caseId: "PROJECT 05",
     year: "2023",
     title: "Chip 8 Go - A Chip 8 Emulator",
     description:
@@ -68,7 +63,6 @@ const projects = [
 const openSourceProojects = [
   {
     id: 1,
-    caseId: "OSS 01",
     year: "2023-2025",
     title: "Caddy",
     description:
@@ -80,7 +74,6 @@ const openSourceProojects = [
   },
   {
     id: 2,
-    caseId: "OSS 02",
     year: "2025-Present",
     title: "Futhark",
     description:

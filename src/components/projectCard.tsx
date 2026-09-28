@@ -1,6 +1,7 @@
+import { ArrowUpRight } from "lucide-react";
+
 export interface ProjectProps {
   id: number;
-  caseId: string;
   year: string;
   title: string;
   description: string;
@@ -13,64 +14,56 @@ export interface ProjectProps {
 
 export function ProjectCard(project: ProjectProps) {
   return (
-    <div key={project.id} className="paper-card casefile-card">
-      <div className="casefile-image">
+    <article className="group flex h-full flex-col">
+      <div className="mb-5 aspect-[16/10] overflow-hidden rounded-lg border bg-muted">
         {project.imageUrl ? (
           <img
             src={project.imageUrl}
             alt={`${project.title} project image`}
-            className="casefile-image-img"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
           />
         ) : (
-          <div className="casefile-image-placeholder">
-            <span>Image pending</span>
+          <div className="flex h-full w-full items-center justify-center text-xs text-muted-foreground">
+            Image pending
           </div>
         )}
       </div>
-      <div className="casefile-card-body">
-        <div className="casefile-card-meta">
-          <span className="casefile-tag">{project.caseId}</span>
-          <span className="casefile-tag">{project.year}</span>
-        </div>
-        <h3 className="casefile-card-title">{project.title}</h3>
-        <p className="casefile-card-description">{project.description}</p>
-        <div className="casefile-card-tech">
-          {project.technologies.map((tech) => (
-            <span key={tech} className="casefile-chip">
-              {tech}
-            </span>
-          ))}
-        </div>
-        <div className="casefile-card-links">
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="casefile-link"
-          >
-            Source
-          </a>
-          {project.liveUrl && (
-            <ProjectSiteSpan link={project.liveUrl} text="Live" />
-          )}
-          {project.projectWebsite && (
-            <ProjectSiteSpan link={project.projectWebsite} text="Website" />
-          )}
-        </div>
+      <div className="flex items-baseline justify-between gap-4">
+        <h3 className="font-medium">{project.title}</h3>
+        <span className="shrink-0 text-sm tabular-nums text-muted-foreground">
+          {project.year}
+        </span>
       </div>
-    </div>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        {project.description}
+      </p>
+      <p className="mt-3 text-xs text-muted-foreground">
+        {project.technologies.join(" · ")}
+      </p>
+      <div className="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-4 text-sm">
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          Source <ArrowUpRight />
+        </a>
+        {project.liveUrl && (
+          <ProjectSiteSpan link={project.liveUrl} text="Live" />
+        )}
+        {project.projectWebsite && (
+          <ProjectSiteSpan link={project.projectWebsite} text="Website" />
+        )}
+      </div>
+    </article>
   );
 }
 
 function ProjectSiteSpan({ link, text }: { link: string; text: string }) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="casefile-link"
-    >
-      {text}
+    <a href={link} target="_blank" rel="noopener noreferrer" className="link">
+      {text} <ArrowUpRight />
     </a>
   );
 }
